@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<!-- TESTE GIT -->
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bc movie - Portfólio</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&family=Joti+One&display=swap"
+        rel="stylesheet">
+    <!--font-->
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/port.css">
+    <script src="./js/app.js"></script>
+
+</head>
+
+<body>
+
+    <div class="app">
+        <section id="home" class="page active">
+
+            <button class="back" onclick="navigate('index.html')">←</button>
+
+            <img id="img-port" src="./assets/img/img-hero-port.png" class="top-img">
+
+            <div class="video-grid">
+
+                <div class="video-card"
+                    data-video="./assets/vid/video-bia.mp4"
+                    data-desc="Bia Melo - Fisioterapeuta - Vídeo promo">
+
+                    <img src="./assets/img/thumb-bia.png"/>
+                    <div class="play">▶</div>
+                </div>
+
+                <div class="video-card"
+                    data-video="./assets/vid/video-bia.mp4"
+                    data-desc="Produção audiovisual corporativa.">
+
+                    <img src="./assets/img/thumb-1.png">
+                    <div class="play">▶</div>
+                </div>
+
+                <div class="video-card"
+                    data-video="./assets/vid/video-1.mp4"
+                    data-desc="Campanha para redes sociais.">
+
+                    <img src="./assets/img/thumb-1.png">
+                    <div class="play">▶</div>
+                </div>
+
+                <div class="video-card"
+                    data-video="./assets/vid/video-1.mp4"
+                    data-desc="Cobertura de evento.">
+
+                    <img src="./assets/img/thumb-1.png">
+                    <div class="play">▶</div>
+                </div>
+
+            </div>
+
+            <a href="https://wa.me/82998059375" class="whatsapp" target="_blank">💬 Whatsapp</a>
+
+        </section>
+    </div>
+
+    <!--modal-->
+    <div id="videoModal">
+        <div class="modal-content">
+
+            <button class="close">X</button>
+
+            <video id="modalVideo" controls playsinline preload="metadata"></video>
+
+            <p id="videoDesc"></p>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
